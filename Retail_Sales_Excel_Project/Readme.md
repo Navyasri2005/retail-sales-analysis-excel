@@ -2,183 +2,135 @@
 
 ## Project Overview
 
-This project analyzes retail sales data using Microsoft Excel to evaluate sales performance, profitability, regional trends, and product category performance. An interactive dashboard was developed using PivotTables, PivotCharts, Excel formulas, and slicers to transform raw transactional data into actionable business insights.
-
-The project demonstrates how Excel can be used for data analysis, business reporting, KPI tracking, and data-driven decision-making.
+This project analyzes retail sales data using Microsoft Excel to evaluate sales performance, profitability, regional trends, and product category performance. An interactive dashboard was developed using Excel formulas, PivotTables, PivotCharts, and slicers to transform raw transactional data into actionable business insights.
 
 ## Business Objectives
 
-- Analyze overall sales, profit, quantity sold, and order volume.
+- Analyze total sales, profit, quantity sold, and order volume.
 - Compare sales and profitability across different regions.
 - Identify high-performing and loss-making product sub-categories.
 - Analyze monthly sales trends from 2014 to 2017.
-- Build an interactive dashboard for exploring sales performance.
-- Provide business recommendations to improve profitability.
-
-## Dataset
-
-- **Dataset:** Sample Superstore Retail Sales Dataset
-- **Records:** 9,994 rows
-- **Time Period:** 2014–2017
-- **Data Format:** Excel workbook
-- **Source:** [Sample Superstore Dataset — Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
-
-### Key Columns
-
-| Column | Description |
-|---|---|
-| Order ID | Unique identifier for an order |
-| Order Date | Date the order was placed |
-| Ship Date | Date the order was shipped |
-| Ship Mode | Shipping method |
-| Customer ID | Customer identifier |
-| Segment | Customer segment |
-| Region | Sales region |
-| Category | Product category |
-| Sub-Category | Product sub-category |
-| Sales | Revenue generated |
-| Quantity | Number of units sold |
-| Discount | Discount applied |
-| Profit | Profit or loss generated |
+- Build an interactive dashboard for monitoring business performance.
+- Generate data-driven recommendations to improve profitability.
 
 ## Tools and Technologies
 
 - **Microsoft Excel**
-- Excel Tables and Structured References
 - Excel Formulas and Functions
 - PivotTables
 - PivotCharts
 - Interactive Slicers
-- KPI Cards
+- Data Cleaning and Transformation
 - Data Visualization
-- Business Analysis
+- Business Intelligence and Reporting
+
+## Dataset Description
+
+The project uses a retail sales dataset containing **9,994 records and 21 original columns**.
+
+The dataset includes:
+
+- Order ID and Order Date
+- Ship Date and Ship Mode
+- Customer ID and Customer Name
+- Segment and Geographic Information
+- Product ID and Product Name
+- Category and Sub-Category
+- Sales, Quantity, Discount, and Profit
+
+The data covers the period from 2014 to 2017.
 
 ## Project Workflow
 
-### 1. Data Preparation
+1. **Data Import:** Imported the retail sales dataset into Microsoft Excel.
+2. **Data Preparation:** Organized the dataset and prepared it for analysis.
+3. **Data Transformation:** Created additional columns such as Order Year, Order Month, Month Number, Shipping Days, Profit Status, and Row Profit Margin.
+4. **Formula-Based Analysis:** Calculated key performance indicators using Excel formulas.
+5. **PivotTable Analysis:** Analyzed sales and profit by region, category, sub-category, and month.
+6. **Dashboard Development:** Created interactive charts, KPI cards, and slicers.
+7. **Business Insights:** Identified sales trends, profitable products, and loss-making sub-categories.
 
-- Reviewed the original dataset and retained a separate source-data worksheet.
-- Used a cleaned-data worksheet for analysis.
-- Checked for missing values and duplicate records.
-- Added calculated columns to support trend and profitability analysis.
+## Key Performance Indicators (KPIs)
 
-### 2. Feature Engineering
-
-Created additional columns using Excel formulas:
-
-- **Order Year:** Extracted the year from Order Date.
-- **Order Month:** Extracted the month name from Order Date.
-- **Month Number:** Extracted the numeric month for chronological sorting.
-- **Shipping Days:** Calculated the difference between Ship Date and Order Date.
-- **Profit Status:** Classified records as Profit, Loss, or Break-even.
-- **Row Profit Margin:** Calculated profit as a percentage of sales for each record.
-
-### 3. Exploratory Data Analysis
-
-Created PivotTables to investigate:
-
-- Sales and profit by region.
-- Sales and profit by category and sub-category.
-- Monthly sales trends from 2014 to 2017.
-- Profitability across product sub-categories.
-
-### 4. Dashboard Development
-
-Built an interactive dashboard containing:
-
-- Total Sales KPI
-- Total Profit KPI
-- Unique Orders KPI
-- Overall Profit Margin KPI
-- Monthly Sales Trend chart
-- Regional Sales and Profit Comparison chart
-- Profit by Sub-Category chart
-- Region, Category, and Segment slicers
-
-## Key Performance Indicators
-
-| Metric | Result |
+| KPI | Value |
 |---|---:|
 | Total Sales | $2,297,200.86 |
 | Total Profit | $286,397.02 |
 | Total Quantity Sold | 37,873 |
 | Unique Orders | 5,009 |
-| Overall Profit Margin | Approximately 12.47% |
+| Overall Profit Margin | 12.47% |
+
+## Dashboard Preview
+
+![Retail Sales Analysis Dashboard](Dashboard%20Screenshot.png)
+
+The interactive Excel dashboard provides an overview of sales performance, profitability, regional trends, and product sub-category performance. Users can explore the data using **Region, Category, and Segment** slicers.
 
 ## Key Business Insights
 
 ### 1. Regional Performance
-
-The West region generated the highest sales of **$725,457.82** and the highest profit of **$108,418.45**.
-
-**Business recommendation:** Investigate the sales strategies and product mix in the West region to identify practices that could improve performance in other regions.
+- The **West region** generated approximately $725,457.82 in sales and $108,418.45 in profit.
+- Regional comparisons help identify areas contributing strongly to overall business performance.
 
 ### 2. Category Performance
+- **Technology** generated the highest sales among the three major categories, at approximately $836,154.03.
+- Technology also delivered the highest category profit, at approximately $145,454.95.
+- Furniture generated approximately $741,999.80 in sales but only $18,451.27 in profit, indicating comparatively low profitability.
 
-Technology generated the highest category sales of **$836,154.03** and the highest category profit of **$145,454.95**.
+### 3. Product Sub-Category Performance
+- **Copiers** generated approximately $55,617.82 in profit.
+- **Tables** recorded a loss of approximately $17,725.48.
+- **Bookcases** recorded a loss of approximately $3,472.56.
+- **Supplies** recorded a loss of approximately $1,189.10.
 
-Furniture generated **$741,999.80** in sales but only **$18,451.27** in profit.
+These results highlight the need to review pricing, discount strategies, and costs for loss-making sub-categories.
 
-**Business recommendation:** Review Furniture discounting, product costs, and product mix to identify opportunities to improve margins.
+### 4. Sales Trends
+- Monthly sales trends were analyzed across 2014–2017.
+- The dashboard allows users to explore performance patterns and compare results across different business segments.
 
-### 3. Loss-Making Sub-Categories
+## Business Recommendations
 
-The analysis identified the following loss-making sub-categories:
-
-| Sub-Category | Total Profit |
-|---|---:|
-| Tables | -$17,725.48 |
-| Bookcases | -$3,472.56 |
-| Supplies | -$1,189.10 |
-
-Copiers generated the highest sub-category profit of **$55,617.82**.
-
-**Business recommendation:** Investigate discount levels, pricing, shipping costs, and product costs for loss-making sub-categories before making changes to their sales strategy.
-
-### 4. Monthly Sales Trends
-
-Monthly sales fluctuated throughout the 2014–2017 period, with noticeable peaks in certain months.
-
-**Business recommendation:** Use monthly sales patterns to support inventory planning and promotional scheduling. Validate recurring seasonal patterns across multiple years before using them for forecasting.
-
-## Dashboard Features
-
-- Interactive filtering by Region, Category, and Segment.
-- KPI cards for quick performance monitoring.
-- Visual comparison of regional sales and profit.
-- Monthly sales trend analysis.
-- Identification of profitable and loss-making sub-categories.
+- Review pricing and discount strategies for loss-making products.
+- Investigate the reasons for low profitability in the Furniture category.
+- Analyze the sales and profit contributions of individual sub-categories.
+- Monitor monthly sales trends to support inventory and sales planning.
+- Use regional and segment-level comparisons to identify opportunities for growth.
 
 ## Project Structure
 
 ```text
-Retail-Sales-Excel-Analysis/
-│
-├── Retail_Sales_Analysis.xlsx
-├── README.md
-└── Dashboard Screenshot.png
+retail-sales-analysis-excel/
+└── Retail_Sales_Excel_Project/
+    ├── Source_Data/
+    ├── Dashboard Screenshot.png
+    ├── Readme.md
+    └── Retail_Sales_Analysis.xlsx
 ```
+
+### Files and Folders
+
+- **Source_Data/** – Contains the source dataset used for the analysis.
+- **Dashboard Screenshot.png** – Preview of the interactive Excel dashboard.
+- **Readme.md** – Project documentation, methodology, KPIs, and business insights.
+- **Retail_Sales_Analysis.xlsx** – Excel workbook containing the sales data, formulas, PivotTables, charts, dashboard, and insights.
 
 ## How to Use This Project
 
-1. Clone or download this repository.
-2. Open `Retail_Sales_Analysis.xlsx` in Microsoft Excel.
-3. Navigate to the Dashboard worksheet.
-4. Use the Region, Category, and Segment slicers to explore the data.
-5. Review the PivotTables and Insights worksheets for detailed analysis.
-
-**Note:** Interactive slicers and PivotCharts work best in desktop Microsoft Excel.
+1. Open `Retail_Sales_Analysis.xlsx` in Microsoft Excel.
+2. Navigate through the analysis worksheets to explore the calculations and PivotTables.
+3. Open the Dashboard worksheet to view the visual analysis.
+4. Use the Region, Category, and Segment slicers to filter the dashboard.
+5. Review the Insights worksheet for the key findings and recommendations.
 
 ## Conclusion
 
-This project demonstrates the use of Microsoft Excel to analyze retail transactions, calculate business KPIs, explore profitability, and build an interactive dashboard. It highlights regional and category performance differences and identifies loss-making product sub-categories that warrant further investigation.
-
-The project demonstrates practical skills in data preparation, Excel formulas, PivotTables, data visualization, and business insight generation.
+This project demonstrates the use of Microsoft Excel for retail sales analysis, data transformation, KPI calculation, interactive dashboard development, and business insight generation. It showcases practical data analytics skills relevant to entry-level Data Analyst roles.
 
 ## Author
 
 **Navya Sri Gude**
 
-Aspiring Data Analyst | Excel | SQL | Power BI | Python
+- GitHub: [Navyasri2005](https://github.com/Navyasri2005)
 
-
+---
