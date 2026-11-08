@@ -103,6 +103,7 @@ These results highlight the need to review pricing, discount strategies, and cos
 retail-sales-analysis-excel/
 └── Retail_Sales_Excel_Project/
     ├── Source_Data/
+    │   └── Sample - Superstore.csv
     ├── Dashboard Screenshot.png
     ├── Readme.md
     └── Retail_Sales_Analysis.xlsx
