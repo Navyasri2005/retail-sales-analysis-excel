@@ -156,8 +156,7 @@ Retail-Sales-Excel-Analysis/
 │
 ├── Retail_Sales_Analysis.xlsx
 ├── README.md
-└── screenshots/
-    └── retail_sales_dashboard.png
+└── Dashboard Screenshot.png
 ```
 
 ## How to Use This Project
